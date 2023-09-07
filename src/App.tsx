@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Provider } from 'mobx-react';
+
+import FilmsStore from './stores/Films';
+import StarshipsStore from './stores/Starships';
+
+import Films from './components/Films';
+import Starships from './components/Starships';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Provider Starships={StarshipsStore} Films={FilmsStore}>
+        <div className="AppWrapper">
+          <Films />
+          <Starships />
+        </div>
+      </Provider>
     </div>
   );
 }
