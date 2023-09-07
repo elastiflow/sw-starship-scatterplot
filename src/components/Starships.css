@@ -1,0 +1,6 @@
+.Starships {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+}

@@ -1,0 +1,15 @@
+.ScatterPlot {
+    flex: 1;
+}
+
+.tooltip {
+    opacity: 0;
+    position: absolute;
+    border: 1px solid #333;
+    padding: 0 5px;
+    background-color: #ebebeb;
+}
+
+circle {
+    fill: #32CD32;
+}
