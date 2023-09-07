@@ -15,6 +15,12 @@ The following wireframe is provided as a guide, but feel free to deviate from it
 
 ![Wireframe](./sw-starship-scatter-plot-wireframe.png)
 
+### Data
+
+The data to complete this project can be fetched from the following endpoints:
+- GET https://swapi.dev/api/films/ | [Docs](https://swapi.dev/documentation#films) | This endpoint returns a list of all Star Wars films.
+- GET https://swapi.dev/api/starships/ | [Docs](https://swapi.dev/documentation#starships) | This endpoint returns a list of all Star Wars starships.
+
 ### Requirements
 
 The scatter plot should have the following features:
